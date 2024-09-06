@@ -1,5 +1,6 @@
 *.class
 *.log
+core/.nondex
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
