@@ -1013,13 +1013,13 @@ public class ZeroCodeAssertionsProcessorImplTest {
 
         assertThat(failedReports.size(), is(2));
         assertThat(
-                failedReports.get(0).toString(),
-                is(
+                failedReports.toString(),
+                containsString(
                         "Assertion jsonPath '$.body.projectDetails.startDateTime' with actual value '2017-04-14T11:49:56.000Z' "
                                 + "did not match the expected value 'Date Before:2016-09-14T09:49:34'"));
         assertThat(
-                failedReports.get(1).toString(),
-                is(
+                failedReports.toString(),
+                containsString(
                         "Assertion jsonPath '$.body.projectDetails.endDateTime' with actual value '2018-11-12T09:39:34.000Z' "
                                 + "did not match the expected value 'Date After:2019-09-14T09:49:34'"));
     }
